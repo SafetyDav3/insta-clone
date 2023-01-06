@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import instaCon from "../public/icons/icons8-instagram.svg"
+import instaWord from "../public/icons/ocw.webp"
 
 function Header() {
   return (
@@ -9,13 +10,13 @@ function Header() {
         {/* left */}
         <div className="relative hidden lg:inline-grid h-24 w-24">
           <Image
-            src="https://links.papareact.com/ocw"
+            src={instaWord}
             layout="fill"
             objectFit="contain"
           />
         </div>
 
-        <div className="w-10 h-10 lg:hidden relative">
+        <div className="w-10 h-10 lg:hidden relative cursor-pointer">
           <Image
             src={instaCon}
             layout="fill"

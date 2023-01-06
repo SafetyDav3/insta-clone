@@ -2,6 +2,8 @@
 
 Following video on [Youtube](https://www.youtube.com/watch?v=a6Xs2Ir40OI&t=2039s)
 
+Break @ 42:00
+
 ## Relevant links    
 
 Getting started with [Tailwind and Next.js](https://tailwindcss.com/docs/guides/nextjs)
