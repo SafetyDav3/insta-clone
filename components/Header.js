@@ -3,6 +3,16 @@ import Image from "next/image";
 import instaCon from "../public/icons/icons8-instagram.svg"
 import instaWord from "../public/icons/ocw.webp"
 
+// Icon imports
+import {
+  SearchIcon,
+  PlusCircleIcon,
+  UserGroupIcon,
+  HeartIcon,
+  PaperAirplaneIcon,
+  MenuIcon,
+} from "@heroicons/react/solid"
+
 function Header() {
   return (
     <div>
@@ -25,6 +35,13 @@ function Header() {
         </div>
 
         {/* Middle */}
+
+        <div>
+          <div>
+
+          </div>
+          <input type="text" placeholder="Search" />
+        </div>
 
         {/* right */}
       </div>

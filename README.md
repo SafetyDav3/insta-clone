@@ -10,6 +10,8 @@ Getting started with [Tailwind and Next.js](https://tailwindcss.com/docs/guides/
 
 Icons downloaded from [Here](https://icons8.com/icons/set/favicon-instagram)
 
+Icons imported from [Here](https://heroicons.com/)
+
 
 
 <br/>
