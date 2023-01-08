@@ -8,9 +8,9 @@ Break @ 42:00
 
 Getting started with [Tailwind and Next.js](https://tailwindcss.com/docs/guides/nextjs)
 
-Icons downloaded from [Here](https://icons8.com/icons/set/favicon-instagram)
+Icons downloaded from [favicon](https://icons8.com/icons/set/favicon-instagram)
 
-Icons imported from [Here](https://heroicons.com/)
+Icons imported from [Heroicons](https://heroicons.com/)
 
 
 
