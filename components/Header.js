@@ -38,7 +38,8 @@ function Header() {
 
         <div>
           <div>
-
+            {/* Deprecated and needs to use version-2 */}
+            <SearchIcon className='h-5 w-5'  />
           </div>
           <input type="text" placeholder="Search" />
         </div>
