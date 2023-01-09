@@ -5,13 +5,13 @@ import instaWord from "../public/icons/ocw.webp"
 
 // Icon imports
 import {
-  SearchIcon,
+  MagnifyingGlassIcon,
   PlusCircleIcon,
   UserGroupIcon,
   HeartIcon,
   PaperAirplaneIcon,
-  MenuIcon,
-} from "@heroicons/react/solid"
+  Bars4Icon,
+} from "@heroicons/react/24/solid"
 
 function Header() {
   return (
@@ -39,7 +39,7 @@ function Header() {
         <div>
           <div>
             {/* Deprecated and needs to use version-2 */}
-            <SearchIcon className='h-5 w-5'  />
+            <MagnifyingGlassIcon className='h-5 w-5'  />
           </div>
           <input type="text" placeholder="Search" />
         </div>
@@ -51,3 +51,4 @@ function Header() {
 }
 
 export default Header;
+
