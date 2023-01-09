@@ -2,7 +2,7 @@
 
 Following video on [Youtube](https://www.youtube.com/watch?v=a6Xs2Ir40OI&t=2039s)
 
-Break @ 42:00
+Break @ 53:00
 
 ## Relevant links    
 

@@ -18,7 +18,7 @@ function Header() {
     <div>
       <div className="flex justify-between max-w-6xl">
         {/* left */}
-        <div className="relative hidden lg:inline-grid h-24 w-24">
+        <div className="relative hidden lg:inline-grid w-24">
           <Image
             src={instaWord}
             layout="fill"
@@ -26,7 +26,7 @@ function Header() {
           />
         </div>
 
-        <div className="w-10 h-10 lg:hidden relative cursor-pointer">
+        <div className="w-10 lg:hidden relative cursor-pointer">
           <Image
             src={instaCon}
             layout="fill"
@@ -36,12 +36,12 @@ function Header() {
 
         {/* Middle */}
 
-        <div>
-          <div>
+        <div className="relative mt-1 p-3 rounded-md">
+          <div className="absolute inset-y-0 pl-3 flex items-center pointer-events-none">
             {/* Deprecated and needs to use version-2 */}
-            <MagnifyingGlassIcon className='h-5 w-5'  />
+            <MagnifyingGlassIcon className='h-5 w-5 text-gray-500'  />
           </div>
-          <input type="text" placeholder="Search" />
+          <input className="bg-gray-50 block w-full pl-10 sm:text-sm border-gray-300 rounded-md focus:ring-black focus:border-black" type="text" placeholder="Search" />
         </div>
 
         {/* right */}
