@@ -1,19 +1,17 @@
-import React, { useEffect } from 'react';
-import faker from 'faker';
+import React from 'react'
 
 function Stories() {
 
-    useEffect(() => {
-        
-    })
-
-
-  return (
-    <div>
+//  stuck here!!!!!!!!!!!!!!!!!!!!
 
 
 
-    </div>
+
+
+    return (
+        <div>
+
+        </div>
   )
 }
 
