@@ -2,6 +2,7 @@
 
 import { faker } from "@faker-js/faker";
 import { useState, useEffect } from "react";
+import Story from "./Story"
 
 export default function Stories() {
   const [suggestions, setSuggestions] = useState([]);
@@ -16,10 +17,20 @@ export default function Stories() {
       registeredAt: faker.date.past(),
     }));
     setSuggestions(suggestions);
+    console.log(suggestions.username)
   }, []);
 
-  
-
+  return (
+    <div>
+      {suggestions.map((profile) => (
+        <Story 
+        key={suggestions.userId}
+        img={suggestions.avatar}
+        username={suggestions.username}
+        />
+      ))}
+    </div>
+  )
 
 
 }
