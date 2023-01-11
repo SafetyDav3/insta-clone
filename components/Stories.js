@@ -1,36 +1,37 @@
-// Generate fake users with Faker.js --- Solution found here: https://stackoverflow.com/questions/73006706/is-there-a-new-form-of-the-contextualcard-feature-in-faker-js/73661832#73661832
+import React, { useState, useEffect } from "react";
+import * as faker from "@faker-js/faker";
+import Story from "./Story";
+import { useSession, signOut, signIn } from "next-auth/react";
 
-import { faker } from "@faker-js/faker";
-import { useState, useEffect } from "react";
-import Story from "./Story"
+function Stories() {
+  const [suggestion, setSuggestion] = useState([]);
+  const { data: session } = useSession();
 
-export default function Stories() {
-  const [suggestions, setSuggestions] = useState([]);
   useEffect(() => {
-    const suggestions = [...Array(20)].map((_, i) => ({
-      userId: faker.datatype.uuid(),
+    const suggestion = [...Array(20)].map((_, i) => ({
+      id: i,
       username: faker.internet.userName(),
-      email: faker.internet.email(),
       avatar: faker.image.avatar(),
-      password: faker.internet.password(),
-      birthdate: faker.date.birthdate(),
-      registeredAt: faker.date.past(),
     }));
-    setSuggestions(suggestions);
-    console.log(suggestions.username)
+
+    setSuggestion(suggestion);
   }, []);
 
+  console.log(suggestion);
+ 
+
   return (
-    <div>
-      {suggestions.map((profile) => (
-        <Story 
-        key={suggestions.userId}
-        img={suggestions.avatar}
-        username={suggestions.username}
-        />
-      ))}
-    </div>
-  )
-
-
+    <>
+      <div className="flex space-x-3 overflow-x-scroll  p-6 mt-2 border-2 border-gray-100 bg-white rounded-sm scrollbar-thin scrollbar-thumb-black">
+        {session && (
+          <Story img={session?.user?.image} main username={session.user.username} />
+        )}
+        {suggestion.map((data) => (
+          <Story img={data.avatar} username={data.username} key={data?.id} />
+        ))}
+      </div>
+    </>
+  );
 }
+
+export default Stories;
